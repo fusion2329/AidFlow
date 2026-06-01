@@ -1,0 +1,18 @@
+{
+  "labels": [
+    {
+      "name": "pupil",
+      "color": "#38D9A9",
+      "type": "mask"
+    }
+  ],
+  "tags": [
+    "valid",
+    "blurred",
+    "glare",
+    "occluded",
+    "off_center",
+    "closed_eye",
+    "uncertain_boundary"
+  ]
+}

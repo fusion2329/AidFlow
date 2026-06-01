@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0000012C00000000000001 /* AidFlowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001012C00000000000001 /* AidFlowApp.swift */; };
+		1A0000022C00000000000001 /* IncidentModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001022C00000000000001 /* IncidentModels.swift */; };
+		1A0000032C00000000000001 /* IncidentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001032C00000000000001 /* IncidentStore.swift */; };
+		1A0000042C00000000000001 /* ArrivalFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001042C00000000000001 /* ArrivalFlow.swift */; };
+		1A0000052C00000000000001 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001052C00000000000001 /* HomeView.swift */; };
+		1A0000062C00000000000001 /* ArrivalModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001062C00000000000001 /* ArrivalModeView.swift */; };
+		1A0000072C00000000000001 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001072C00000000000001 /* TimelineView.swift */; };
+		1A0000082C00000000000001 /* HandoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001082C00000000000001 /* HandoverView.swift */; };
+		1A0000092C00000000000001 /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001092C00000000000001 /* TrainingView.swift */; };
+		1A00000A2C00000000000001 /* PastIncidentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00010A2C00000000000001 /* PastIncidentsView.swift */; };
+		1A00000B2C00000000000001 /* SceneStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00010B2C00000000000001 /* SceneStyles.swift */; };
+		1A00000C2C00000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A00010D2C00000000000001 /* Assets.xcassets */; };
+		1A00000D2C00000000000001 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00010E2C00000000000001 /* LocationManager.swift */; };
+		1A00000E2C00000000000001 /* IncidentHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00010F2C00000000000001 /* IncidentHistoryView.swift */; };
+		1A00000F2C00000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001102C00000000000001 /* SettingsView.swift */; };
+		1A0000102C00000000000001 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001112C00000000000001 /* MainTabView.swift */; };
+		1A0000112C00000000000001 /* MedicationNames.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0001122C00000000000001 /* MedicationNames.json */; };
+		1A0000122C00000000000001 /* MedicalHistoryConditions.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0001132C00000000000001 /* MedicalHistoryConditions.json */; };
+		1A0000132C00000000000001 /* PatientRecordFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001142C00000000000001 /* PatientRecordFormView.swift */; };
+		1A0000142C00000000000001 /* CommonAllergens.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A0001152C00000000000001 /* CommonAllergens.json */; };
+		1A0000152C00000000000001 /* AppLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001162C00000000000001 /* AppLocalization.swift */; };
+		1A0000162C00000000000001 /* PupilReactionCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0001182C00000000000001 /* PupilReactionCheckView.swift */; };
+		1A1000012C00000000000001 /* AidFlowLiveActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001012C00000000000001 /* AidFlowLiveActivityAttributes.swift */; };
+		1A1000022C00000000000001 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001022C00000000000001 /* LiveActivityManager.swift */; };
+		1A1000032C00000000000001 /* AidFlowLiveActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001012C00000000000001 /* AidFlowLiveActivityAttributes.swift */; };
+		1A1000042C00000000000001 /* AidFlowLiveActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001042C00000000000001 /* AidFlowLiveActivities.swift */; };
+		1A1000052C00000000000001 /* AidFlowLiveActivities.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1A1001032C00000000000001 /* AidFlowLiveActivities.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A1009012C00000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A0006012C00000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A1004012C00000000000001;
+			remoteInfo = AidFlowLiveActivities;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A1005022C00000000000001 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1A1000052C00000000000001 /* AidFlowLiveActivities.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A0001012C00000000000001 /* AidFlowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AidFlowApp.swift; sourceTree = "<group>"; };
+		1A0001022C00000000000001 /* IncidentModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentModels.swift; sourceTree = "<group>"; };
+		1A0001032C00000000000001 /* IncidentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentStore.swift; sourceTree = "<group>"; };
+		1A0001042C00000000000001 /* ArrivalFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalFlow.swift; sourceTree = "<group>"; };
+		1A0001052C00000000000001 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1A0001062C00000000000001 /* ArrivalModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalModeView.swift; sourceTree = "<group>"; };
+		1A0001072C00000000000001 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		1A0001082C00000000000001 /* HandoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandoverView.swift; sourceTree = "<group>"; };
+		1A0001092C00000000000001 /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		1A00010A2C00000000000001 /* PastIncidentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastIncidentsView.swift; sourceTree = "<group>"; };
+		1A00010B2C00000000000001 /* SceneStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneStyles.swift; sourceTree = "<group>"; };
+		1A00010C2C00000000000001 /* AidFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AidFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A00010D2C00000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A00010E2C00000000000001 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		1A00010F2C00000000000001 /* IncidentHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncidentHistoryView.swift; sourceTree = "<group>"; };
+		1A0001102C00000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1A0001112C00000000000001 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		1A0001122C00000000000001 /* MedicationNames.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MedicationNames.json; sourceTree = "<group>"; };
+		1A0001132C00000000000001 /* MedicalHistoryConditions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MedicalHistoryConditions.json; sourceTree = "<group>"; };
+		1A0001142C00000000000001 /* PatientRecordFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRecordFormView.swift; sourceTree = "<group>"; };
+		1A0001152C00000000000001 /* CommonAllergens.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CommonAllergens.json; sourceTree = "<group>"; };
+		1A0001162C00000000000001 /* AppLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocalization.swift; sourceTree = "<group>"; };
+		1A0001172C00000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0001182C00000000000001 /* PupilReactionCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PupilReactionCheckView.swift; sourceTree = "<group>"; };
+		1A1001012C00000000000001 /* AidFlowLiveActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AidFlowLiveActivityAttributes.swift; sourceTree = "<group>"; };
+		1A1001022C00000000000001 /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
+		1A1001032C00000000000001 /* AidFlowLiveActivities.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AidFlowLiveActivities.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1001042C00000000000001 /* AidFlowLiveActivities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AidFlowLiveActivities.swift; sourceTree = "<group>"; };
+		1A1001052C00000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0002012C00000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1002012C00000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0003012C00000000000001 = {
+			isa = PBXGroup;
+			children = (
+				1A0003022C00000000000001 /* AidFlow */,
+				1A1003022C00000000000001 /* AidFlowLiveActivities */,
+				1A0003032C00000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A0003022C00000000000001 /* AidFlow */ = {
+			isa = PBXGroup;
+			children = (
+				1A0001012C00000000000001 /* AidFlowApp.swift */,
+				1A0001172C00000000000001 /* Info.plist */,
+				1A00010D2C00000000000001 /* Assets.xcassets */,
+				1A0003062C00000000000001 /* Resources */,
+				1A1003042C00000000000001 /* LiveActivities */,
+				1A0003042C00000000000001 /* Models */,
+				1A0003052C00000000000001 /* Views */,
+			);
+			path = AidFlow;
+			sourceTree = "<group>";
+		};
+		1A0003032C00000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A00010C2C00000000000001 /* AidFlow.app */,
+				1A1001032C00000000000001 /* AidFlowLiveActivities.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A0003042C00000000000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A0001022C00000000000001 /* IncidentModels.swift */,
+				1A0001032C00000000000001 /* IncidentStore.swift */,
+				1A0001042C00000000000001 /* ArrivalFlow.swift */,
+				1A00010E2C00000000000001 /* LocationManager.swift */,
+				1A1001022C00000000000001 /* LiveActivityManager.swift */,
+				1A0001162C00000000000001 /* AppLocalization.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A0003052C00000000000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A0001052C00000000000001 /* HomeView.swift */,
+				1A0001112C00000000000001 /* MainTabView.swift */,
+				1A0001102C00000000000001 /* SettingsView.swift */,
+				1A0001062C00000000000001 /* ArrivalModeView.swift */,
+				1A00010F2C00000000000001 /* IncidentHistoryView.swift */,
+				1A0001142C00000000000001 /* PatientRecordFormView.swift */,
+				1A0001182C00000000000001 /* PupilReactionCheckView.swift */,
+				1A0001072C00000000000001 /* TimelineView.swift */,
+				1A0001082C00000000000001 /* HandoverView.swift */,
+				1A0001092C00000000000001 /* TrainingView.swift */,
+				1A00010A2C00000000000001 /* PastIncidentsView.swift */,
+				1A00010B2C00000000000001 /* SceneStyles.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A0003062C00000000000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A0001122C00000000000001 /* MedicationNames.json */,
+				1A0001132C00000000000001 /* MedicalHistoryConditions.json */,
+				1A0001152C00000000000001 /* CommonAllergens.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A1003022C00000000000001 /* AidFlowLiveActivities */ = {
+			isa = PBXGroup;
+			children = (
+				1A1001042C00000000000001 /* AidFlowLiveActivities.swift */,
+				1A1001052C00000000000001 /* Info.plist */,
+			);
+			path = AidFlowLiveActivities;
+			sourceTree = "<group>";
+		};
+		1A1003042C00000000000001 /* LiveActivities */ = {
+			isa = PBXGroup;
+			children = (
+				1A1001012C00000000000001 /* AidFlowLiveActivityAttributes.swift */,
+			);
+			path = LiveActivities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A0004012C00000000000001 /* AidFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A0007012C00000000000001 /* Build configuration list for PBXNativeTarget "AidFlow" */;
+			buildPhases = (
+				1A0005012C00000000000001 /* Sources */,
+				1A0002012C00000000000001 /* Frameworks */,
+				1A0005022C00000000000001 /* Resources */,
+				1A1005022C00000000000001 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A1009022C00000000000001 /* PBXTargetDependency */,
+			);
+			name = AidFlow;
+			productName = AidFlow;
+			productReference = 1A00010C2C00000000000001 /* AidFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A1004012C00000000000001 /* AidFlowLiveActivities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A1007012C00000000000001 /* Build configuration list for PBXNativeTarget "AidFlowLiveActivities" */;
+			buildPhases = (
+				1A1005012C00000000000001 /* Sources */,
+				1A1002012C00000000000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AidFlowLiveActivities;
+			productName = AidFlowLiveActivities;
+			productReference = 1A1001032C00000000000001 /* AidFlowLiveActivities.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0006012C00000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					1A0004012C00000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					1A1004012C00000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 1A0006022C00000000000001 /* Build configuration list for PBXProject "AidFlow" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 1A0003012C00000000000001;
+			productRefGroup = 1A0003032C00000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A0004012C00000000000001 /* AidFlow */,
+				1A1004012C00000000000001 /* AidFlowLiveActivities */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0005022C00000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A00000C2C00000000000001 /* Assets.xcassets in Resources */,
+				1A0000112C00000000000001 /* MedicationNames.json in Resources */,
+				1A0000122C00000000000001 /* MedicalHistoryConditions.json in Resources */,
+				1A0000142C00000000000001 /* CommonAllergens.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A0005012C00000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000012C00000000000001 /* AidFlowApp.swift in Sources */,
+				1A0000022C00000000000001 /* IncidentModels.swift in Sources */,
+				1A0000032C00000000000001 /* IncidentStore.swift in Sources */,
+				1A0000042C00000000000001 /* ArrivalFlow.swift in Sources */,
+				1A1000012C00000000000001 /* AidFlowLiveActivityAttributes.swift in Sources */,
+				1A00000D2C00000000000001 /* LocationManager.swift in Sources */,
+				1A1000022C00000000000001 /* LiveActivityManager.swift in Sources */,
+				1A0000152C00000000000001 /* AppLocalization.swift in Sources */,
+				1A0000052C00000000000001 /* HomeView.swift in Sources */,
+				1A0000102C00000000000001 /* MainTabView.swift in Sources */,
+				1A00000F2C00000000000001 /* SettingsView.swift in Sources */,
+				1A0000062C00000000000001 /* ArrivalModeView.swift in Sources */,
+				1A00000E2C00000000000001 /* IncidentHistoryView.swift in Sources */,
+				1A0000132C00000000000001 /* PatientRecordFormView.swift in Sources */,
+				1A0000162C00000000000001 /* PupilReactionCheckView.swift in Sources */,
+				1A0000072C00000000000001 /* TimelineView.swift in Sources */,
+				1A0000082C00000000000001 /* HandoverView.swift in Sources */,
+				1A0000092C00000000000001 /* TrainingView.swift in Sources */,
+				1A00000A2C00000000000001 /* PastIncidentsView.swift in Sources */,
+				1A00000B2C00000000000001 /* SceneStyles.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1005012C00000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1000032C00000000000001 /* AidFlowLiveActivityAttributes.swift in Sources */,
+				1A1000042C00000000000001 /* AidFlowLiveActivities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A1009022C00000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A1004012C00000000000001 /* AidFlowLiveActivities */;
+			targetProxy = 1A1009012C00000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A0008012C00000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3VV7GQW8ZH;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A0008022C00000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3VV7GQW8ZH;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A0008032C00000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AidFlow/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sy.aidflow.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A0008042C00000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AidFlow/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sy.aidflow.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A1008012C00000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AidFlowLiveActivities/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sy.aidflow.dev.LiveActivities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A1008022C00000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AidFlowLiveActivities/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sy.aidflow.dev.LiveActivities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A0006022C00000000000001 /* Build configuration list for PBXProject "AidFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0008012C00000000000001 /* Debug */,
+				1A0008022C00000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0007012C00000000000001 /* Build configuration list for PBXNativeTarget "AidFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0008032C00000000000001 /* Debug */,
+				1A0008042C00000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A1007012C00000000000001 /* Build configuration list for PBXNativeTarget "AidFlowLiveActivities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1008012C00000000000001 /* Debug */,
+				1A1008022C00000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A0006012C00000000000001 /* Project object */;
+}
