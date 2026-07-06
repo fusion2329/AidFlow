@@ -10,6 +10,8 @@ Release notes are maintained in [`RELEASE_NOTES.md`](RELEASE_NOTES.md).
 
 Experimental Android Lite scaffold: [`android/`](android/README.md).
 
+Collaboration workflow and pull request expectations are documented in [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
 ## Current Status
 
 AidFlow has moved beyond the first MVP. The current build includes:
@@ -268,7 +270,7 @@ Do not run the `AidFlowLiveActivities` extension scheme directly. It is embedded
 Common verification commands used during development:
 
 ```sh
-xcodebuild -project AidFlow.xcodeproj -scheme AidFlow -destination generic/platform=iOS build
+xcodebuild -project AidFlow.xcodeproj -scheme AidFlow -destination generic/platform=iOS -derivedDataPath /private/tmp/AidFlowDerivedData CODE_SIGNING_ALLOWED=NO build
 xcodebuild -project AidFlow.xcodeproj -scheme AidFlow -destination generic/platform=iOS analyze
 xcodebuild -project AidFlow.xcodeproj -scheme AidFlow -destination 'platform=iOS Simulator,name=iPhone 17' build
 xcodebuild -showsdks
