@@ -10,6 +10,8 @@ Release notes are maintained in [`RELEASE_NOTES.md`](RELEASE_NOTES.md).
 
 Experimental Android Lite scaffold: [`android/`](android/README.md).
 
+Experimental Apple Watch scaffold: `AidFlowWatchApp` target in `AidFlow.xcodeproj`.
+
 Collaboration workflow and pull request expectations are documented in [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Current Status
@@ -33,6 +35,7 @@ AidFlow has moved beyond the first MVP. The current build includes:
 - Local persistence using a coalesced JSON database with load-time recovery safeguards.
 - Live Activity support for active Arrival Mode incidents.
 - CPR Counter state in Live Activities when CPR is started from Arrival Mode or from the Home tool.
+- Apple Watch Lite scaffold with compact scene checklist, CPR counter, and handover timeline surfaces.
 
 ## Core User Flows
 
@@ -151,6 +154,17 @@ Current Handover layout safeguards:
 - PDF export estimates section heights from actual wrapped content before drawing, reducing footer overlap and page-break risk for long localized values or notes.
 - Handover share artifacts are generated on explicit cache refresh points, not from SwiftUI `body` computed properties, avoiding repeated PDF/text file writes during redraws.
 - Developer screen IDs are placed in the top safe area instead of over bottom controls.
+
+### Apple Watch Lite
+
+The `AidFlowWatchApp` watchOS target is an early companion scaffold focused on fast wrist interactions:
+
+- Compact AidFlow home status with elapsed scene timer.
+- DRSABCD-style quick checklist for Danger, Response, Airway, Breathing, Call 000, and Monitor.
+- Wrist CPR counter with 30:2 cycle tracking.
+- MIST-style handover brief and recent timeline events.
+
+This first watch scaffold keeps its state local to the watch app. iPhone sync through WatchConnectivity is intentionally left for the next iteration.
 
 ### Routine
 

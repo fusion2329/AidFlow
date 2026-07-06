@@ -34,6 +34,13 @@
 		1A1000032C00000000000001 /* AidFlowLiveActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001012C00000000000001 /* AidFlowLiveActivityAttributes.swift */; };
 		1A1000042C00000000000001 /* AidFlowLiveActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1001042C00000000000001 /* AidFlowLiveActivities.swift */; };
 		1A1000052C00000000000001 /* AidFlowLiveActivities.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1A1001032C00000000000001 /* AidFlowLiveActivities.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1A2000012C00000000000001 /* AidFlowWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2001012C00000000000001 /* AidFlowWatchApp.swift */; };
+		1A2000022C00000000000001 /* WatchSceneStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2001022C00000000000001 /* WatchSceneStore.swift */; };
+		1A2000032C00000000000001 /* WatchHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2001032C00000000000001 /* WatchHomeView.swift */; };
+		1A2000042C00000000000001 /* WatchChecklistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2001042C00000000000001 /* WatchChecklistView.swift */; };
+		1A2000052C00000000000001 /* WatchCPRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2001052C00000000000001 /* WatchCPRView.swift */; };
+		1A2000062C00000000000001 /* WatchHandoverBriefView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2001062C00000000000001 /* WatchHandoverBriefView.swift */; };
+		1A2000072C00000000000001 /* AidFlowWatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1A2001072C00000000000001 /* AidFlowWatchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +50,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1A1004012C00000000000001;
 			remoteInfo = AidFlowLiveActivities;
+		};
+		1A2009012C00000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A0006012C00000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A2004012C00000000000001;
+			remoteInfo = AidFlowWatchApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -56,6 +70,17 @@
 				1A1000052C00000000000001 /* AidFlowLiveActivities.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A2005032C00000000000001 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1A2000072C00000000000001 /* AidFlowWatchApp.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -90,6 +115,14 @@
 		1A1001032C00000000000001 /* AidFlowLiveActivities.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AidFlowLiveActivities.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1001042C00000000000001 /* AidFlowLiveActivities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AidFlowLiveActivities.swift; sourceTree = "<group>"; };
 		1A1001052C00000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A2001012C00000000000001 /* AidFlowWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AidFlowWatchApp.swift; sourceTree = "<group>"; };
+		1A2001022C00000000000001 /* WatchSceneStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSceneStore.swift; sourceTree = "<group>"; };
+		1A2001032C00000000000001 /* WatchHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHomeView.swift; sourceTree = "<group>"; };
+		1A2001042C00000000000001 /* WatchChecklistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchChecklistView.swift; sourceTree = "<group>"; };
+		1A2001052C00000000000001 /* WatchCPRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchCPRView.swift; sourceTree = "<group>"; };
+		1A2001062C00000000000001 /* WatchHandoverBriefView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchHandoverBriefView.swift; sourceTree = "<group>"; };
+		1A2001072C00000000000001 /* AidFlowWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AidFlowWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2001082C00000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +140,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A2002012C00000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -115,6 +155,7 @@
 			children = (
 				1A0003022C00000000000001 /* AidFlow */,
 				1A1003022C00000000000001 /* AidFlowLiveActivities */,
+				1A2003022C00000000000001 /* AidFlowWatchApp */,
 				1A0003032C00000000000001 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,6 +179,7 @@
 			children = (
 				1A00010C2C00000000000001 /* AidFlow.app */,
 				1A1001032C00000000000001 /* AidFlowLiveActivities.appex */,
+				1A2001072C00000000000001 /* AidFlowWatchApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +243,20 @@
 			path = LiveActivities;
 			sourceTree = "<group>";
 		};
+		1A2003022C00000000000001 /* AidFlowWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				1A2001012C00000000000001 /* AidFlowWatchApp.swift */,
+				1A2001082C00000000000001 /* Info.plist */,
+				1A2001022C00000000000001 /* WatchSceneStore.swift */,
+				1A2001032C00000000000001 /* WatchHomeView.swift */,
+				1A2001042C00000000000001 /* WatchChecklistView.swift */,
+				1A2001052C00000000000001 /* WatchCPRView.swift */,
+				1A2001062C00000000000001 /* WatchHandoverBriefView.swift */,
+			);
+			path = AidFlowWatchApp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,11 +268,13 @@
 				1A0002012C00000000000001 /* Frameworks */,
 				1A0005022C00000000000001 /* Resources */,
 				1A1005022C00000000000001 /* Embed Foundation Extensions */,
+				1A2005032C00000000000001 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				1A1009022C00000000000001 /* PBXTargetDependency */,
+				1A2009022C00000000000001 /* PBXTargetDependency */,
 			);
 			name = AidFlow;
 			productName = AidFlow;
@@ -239,6 +297,23 @@
 			productReference = 1A1001032C00000000000001 /* AidFlowLiveActivities.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		1A2004012C00000000000001 /* AidFlowWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A2007012C00000000000001 /* Build configuration list for PBXNativeTarget "AidFlowWatchApp" */;
+			buildPhases = (
+				1A2005012C00000000000001 /* Sources */,
+				1A2002012C00000000000001 /* Frameworks */,
+				1A2005022C00000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AidFlowWatchApp;
+			productName = AidFlowWatchApp;
+			productReference = 1A2001072C00000000000001 /* AidFlowWatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -253,6 +328,9 @@
 						CreatedOnToolsVersion = 16.0;
 					};
 					1A1004012C00000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					1A2004012C00000000000001 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -273,6 +351,7 @@
 			targets = (
 				1A0004012C00000000000001 /* AidFlow */,
 				1A1004012C00000000000001 /* AidFlowLiveActivities */,
+				1A2004012C00000000000001 /* AidFlowWatchApp */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +365,13 @@
 				1A0000112C00000000000001 /* MedicationNames.json in Resources */,
 				1A0000122C00000000000001 /* MedicalHistoryConditions.json in Resources */,
 				1A0000142C00000000000001 /* CommonAllergens.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A2005022C00000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +414,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A2005012C00000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A2000012C00000000000001 /* AidFlowWatchApp.swift in Sources */,
+				1A2000022C00000000000001 /* WatchSceneStore.swift in Sources */,
+				1A2000032C00000000000001 /* WatchHomeView.swift in Sources */,
+				1A2000042C00000000000001 /* WatchChecklistView.swift in Sources */,
+				1A2000052C00000000000001 /* WatchCPRView.swift in Sources */,
+				1A2000062C00000000000001 /* WatchHandoverBriefView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -335,6 +434,11 @@
 			isa = PBXTargetDependency;
 			target = 1A1004012C00000000000001 /* AidFlowLiveActivities */;
 			targetProxy = 1A1009012C00000000000001 /* PBXContainerItemProxy */;
+		};
+		1A2009022C00000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A2004012C00000000000001 /* AidFlowWatchApp */;
+			targetProxy = 1A2009012C00000000000001 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -570,6 +674,58 @@
 			};
 			name = Release;
 		};
+		1A2008012C00000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AidFlowWatchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sy.aidflow.dev.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		1A2008022C00000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AidFlowWatchApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sy.aidflow.dev.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -596,6 +752,15 @@
 			buildConfigurations = (
 				1A1008012C00000000000001 /* Debug */,
 				1A1008022C00000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A2007012C00000000000001 /* Build configuration list for PBXNativeTarget "AidFlowWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A2008012C00000000000001 /* Debug */,
+				1A2008022C00000000000001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
