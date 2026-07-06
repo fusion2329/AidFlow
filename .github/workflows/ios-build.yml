@@ -1,0 +1,33 @@
+name: iOS Build
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build AidFlow
+    runs-on: macos-15
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Build
+        run: |
+          xcodebuild \
+            -project AidFlow.xcodeproj \
+            -scheme AidFlow \
+            -destination generic/platform=iOS \
+            -derivedDataPath "$RUNNER_TEMP/AidFlowDerivedData" \
+            CODE_SIGNING_ALLOWED=NO \
+            build
